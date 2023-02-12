@@ -1,7 +1,7 @@
 package ru.alishev.springcourse.config;
 
-import jakarta.servlet.ServletConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
 
 public class MySpringMVCDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
@@ -11,7 +11,7 @@ public class MySpringMVCDispatcherServletInitializer extends AbstractAnnotationC
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {ServletConfig.class};
+        return new Class[] {SpringConfig.class};
     }
 
     @Override
