@@ -16,7 +16,7 @@ public class BatchController {
         this.personDAO = personDAO;
     }
 
-    @GetMapping("/batch/index")
+    @GetMapping()
     public String index() {
         return "test-batch-update";
     }
