@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import ru.alishev.springcourse.dao.PersonDAO;
 
 @Controller
-@RequestMapping("/batch/test-batch-update")
+@RequestMapping("/test-batch-update")
 public class BatchController {
     private final PersonDAO personDAO;
 
@@ -18,7 +18,7 @@ public class BatchController {
 
     @GetMapping()
     public String index() {
-        return "test-batch-update";
+        return "batch/test-batch-update";
     }
 
     @GetMapping("/without")
